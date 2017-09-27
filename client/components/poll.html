@@ -1,0 +1,16 @@
+<template name="poll">
+    <div class="poll" data-id="{{ _id }}">
+        
+        <div class="alert alert-info" role="alert">
+            <h4> {{ question }}</h4>
+        </div>    
+        
+        {{ #each indexedArray choices }}
+            <a href="#" class="vote btn btn-primary btn-block" data-id="{{ _index }}">
+                <span class="votes pull-right badge badge-secondary">{{ votes }}</span>
+                <span class="text">{{ text }}</span>
+            </a>
+        {{ /each }}
+        
+    </div>
+</template>

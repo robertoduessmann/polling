@@ -1,0 +1,36 @@
+<head>
+  <title>DecideJa</title>
+</head>
+
+<body>
+    <div class="container">        
+        <header>
+            <span class="head">DecideJa</span>
+            <span class="glyphicon glyphicon-ok-circle btn-lg" aria-hidden="true"></span>
+            <hr>
+        </header>
+
+        <div class="content">          
+            <div id="new-poll" class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        {{ >pollForm }}
+                    </div>
+                </div>
+            </div>            
+            <div class="polls">
+                {{ #each findOne }}
+                    {{ >poll }}
+                {{ /each }}
+            </div>
+            <br><br><br><br><br>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <hr>
+                © 2017
+            </div>  
+        </footer>   
+     </div>
+</body>
