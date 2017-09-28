@@ -15,6 +15,6 @@ Template.pollForm.events({
     };    
     Polls.insert(newPoll);
 
-    window.location.replace("http://localhost:3000/" +newPoll.name )
+    window.location.replace( window.location.href + newPoll.name )
   }
 });
