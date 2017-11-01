@@ -18,8 +18,9 @@ Template.pollForm.events({
       }
     }
 
-    Polls.insert(newPoll);
-
-    window.location.replace( window.location.href + newPoll.name )
+    if (newPoll.choices.length > 1) {
+        Polls.insert(newPoll);
+        window.location.replace( window.location.href + newPoll.name )
+    }
   }
 });
