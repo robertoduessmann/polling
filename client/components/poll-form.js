@@ -18,9 +18,16 @@ Template.pollForm.events({
       }
     }
 
-    if (newPoll.choices.length > 1) {
+    if (newPoll.choices.length >= 1) {
         Polls.insert(newPoll);
         window.location.replace( window.location.href + newPoll.name )
+    }
+  },
+
+  'keypress #name': function(event) {
+    if (event.which == 32){
+        alert("Please use Numbers and Letters Only!!");
+        return false;
     }
   }
 });
