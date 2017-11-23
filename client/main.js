@@ -31,13 +31,3 @@ UI.registerHelper('indexedArray', function(context, options) {
     });
   }
 });
-
-/*validation for not to allow space in name field */
-$(function() {
-  $('#nome').on('keypress', function(e) {
-      if (e.which == 32){
-          alert("Please use Numbers and Letters Only!!");
-          return false;
-      }
-  });
-})
