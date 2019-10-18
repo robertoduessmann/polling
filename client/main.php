@@ -30,7 +30,7 @@
         <footer>
             <div class="footer">
                 <hr>
-                © 2017
+                © <?php echo date("Y"); ?>
             </div>  
         </footer>   
      </div>
