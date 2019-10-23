@@ -8,6 +8,7 @@ Template.body.rendered = function() {
   if(window.location.pathname != '/'){
     $('#new-poll').hide();
   }
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 }
 
 Template.body.helpers({  
